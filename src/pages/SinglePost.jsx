@@ -5,7 +5,7 @@ export default function SinglePost({ BaseApiUrl }) {
     const navigate = useNavigate();
     const [post, setPost] = useState(null)
     const { slug } = useParams();
-    const url = `(${BaseApiUrl}/posts/${slug}`
+    const url = `${BaseApiUrl}/posts/${slug}`
     console.log(url);
     useEffect(
         () => {
