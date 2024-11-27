@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-export default function SinglePost() {
+
+export default function SinglePost({ BaseApiUrl }) {
     const navigate = useNavigate();
     const [post, setPost] = useState(null)
     const { slug } = useParams();
-    const url = `http://localhost:3000/posts/${slug}`
+    const url = `(${BaseApiUrl}/posts/${slug}`
     console.log(url);
     useEffect(
         () => {
