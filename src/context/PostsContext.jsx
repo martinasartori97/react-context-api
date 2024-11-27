@@ -1,4 +1,4 @@
 import { createContext } from 'react'
 const PostsContext = createContext()
 
-export default PostsConte
+export default PostsContext
