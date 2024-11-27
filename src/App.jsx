@@ -8,6 +8,8 @@ import Posts from './pages/Posts';
 import DefaultLayout from './pages/DefaultLayout';
 import PostsDetail from './pages/PostsDetail'
 import SinglePost from './pages/SinglePost'
+import { useContext } from 'react'
+import PostsContext from '../context/PostsContext'
 // import AppCards from './components/AppCards'
 
 

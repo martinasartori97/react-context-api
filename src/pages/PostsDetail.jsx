@@ -21,7 +21,7 @@ export default function PostsDetail() {
     return (
         <>
 
-
+            <h1></h1>
 
 
 
