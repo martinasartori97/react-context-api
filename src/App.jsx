@@ -198,17 +198,20 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<DefaultLayout />}>
-            <Route path='/' element={<Home />} />
-            <Route path='/ChiSiamo' element={<ChiSiamo />} />
-            <Route path='/Posts' element={<Posts />} />
-          </Route>
 
-          <Route path='/:slug' element={<SinglePost />} />
-        </Routes>
-      </BrowserRouter>
+      <PostsContext.Provider value={{ Posts }}>
+        <BrowserRouter>
+          <Routes>
+            <Route element={<DefaultLayout />}>
+              <Route path='/' element={<Home />} />
+              <Route path='/ChiSiamo' element={<ChiSiamo />} />
+              <Route path='/Posts' element={<Posts />} />
+            </Route>
+
+            <Route path='/:slug' element={<SinglePost />} />
+          </Routes>
+        </BrowserRouter>
+      </PostsContext.Provider>
 
 
 
